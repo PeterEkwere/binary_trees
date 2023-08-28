@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-
 /* Original code from http://stackoverflow.com/a/13755911/5184480 */
 
 /**
@@ -12,7 +11,7 @@
  *
  * Return: length of printed tree after process
  */
-static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
+int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 {
 	char b[6];
 	int width, left, right, is_left, i;
@@ -47,7 +46,7 @@ static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
  *
  * Return: The height of the tree starting at @node
  */
-static size_t _height(const binary_tree_t *tree)
+size_t _height(const binary_tree_t *tree)
 {
 	size_t height_l;
 	size_t height_r;
