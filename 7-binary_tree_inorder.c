@@ -4,10 +4,10 @@
  * @tree: this is a pointer to the root node
  * @func: This is a pointer to a funciton to print a done
  * Return: Void
-*/
+ */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-    func(tree->n);
-    binary_tree_preorder(tree->left, (func)(tree->n));
-    binary_tree_preorder(tree->right, (func)(tree->n));
+	func(tree->n);
+	binary_tree_preorder(tree->left, (func)(tree->n));
+	binary_tree_preorder(tree->right, (func)(tree->n));
 }
