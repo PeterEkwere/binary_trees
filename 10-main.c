@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "binary_trees.h"
 /**
  * main - Entry point
@@ -20,8 +18,8 @@ int main(void)
 
     depth = binary_tree_depth(root);
     printf("Depth of %d: %lu\n", root->n, depth);
-    depth = binary_tree_depth(root->right->right);
-    printf("Depth of %d: %lu\n", root->right->right->n, depth);
+    depth = binary_tree_depth(root->right);
+    printf("Depth of %d: %lu\n", root->right->n, depth);
     depth = binary_tree_depth(root->left->right);
     printf("Depth of %d: %lu\n", root->left->right->n, depth);
     return (0);
